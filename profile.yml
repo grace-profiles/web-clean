@@ -20,48 +20,48 @@ features:
         - gsp
         - asset-pipeline
 repositories:
-    - "mavenLocal()"
+    - "mavenCentral()"
     - "https://repo.grails.org/grails/core"
 build:
     repositories:
-        - "mavenLocal()"
+        - "mavenCentral()"
         - "https://repo.grails.org/grails/core"
         - "https://repo.gradle.org/gradle/libs-releases"
     plugins:
         - eclipse
         - idea
         - war
-        - org.grails.grails-web
+        - org.graceframework.grace-web
 dependencies:
     - scope: build
-      coords: "org.grails:grails-gradle-plugin:$grailsVersion"
+      coords: "org.graceframework:grace-gradle-plugin:$grailsVersion"
     - scope: compile
       coords: "org.springframework.boot:spring-boot-autoconfigure"
     - scope: compile
-      coords: "org.grails:grails-boot"
+      coords: "org.graceframework:grace-boot"
     - scope: compile
-      coords: "org.grails:grails-core"
+      coords: "org.graceframework:grace-core"
     - scope: compile
-      coords: "org.grails:grails-logging"
+      coords: "org.graceframework:grace-logging"
     - scope: compile
-      coords: "org.grails:grails-plugin-controllers"
+      coords: "org.graceframework:grace-plugin-controllers"
     - scope: compile
-      coords: "org.grails:grails-plugin-converters"
+      coords: "org.graceframework:grace-plugin-converters"
     - scope: compile
-      coords: "org.grails:grails-plugin-databinding"
+      coords: "org.graceframework:grace-plugin-databinding"
     - scope: compile
-      coords: "org.grails:grails-plugin-datasource"
+      coords: "org.graceframework:grace-plugin-datasource"
     - scope: compile
-      coords: "org.grails:grails-plugin-domain-class"
+      coords: "org.graceframework:grace-plugin-domain-class"
     - scope: compile
-      coords: "org.grails:grails-plugin-i18n"
+      coords: "org.graceframework:grace-plugin-i18n"
     - scope: compile
-      coords: "org.grails:grails-plugin-interceptors"
+      coords: "org.graceframework:grace-plugin-interceptors"
     - scope: compile
-      coords: "org.grails:grails-plugin-rest"
+      coords: "org.graceframework:grace-plugin-rest"
     - scope: compile
-      coords: "org.grails:grails-plugin-services"
+      coords: "org.graceframework:grace-plugin-services"
     - scope: compile
-      coords: "org.grails:grails-plugin-url-mappings"
+      coords: "org.graceframework:grace-plugin-url-mappings"
     - scope: compileOnly
       coords: "io.micronaut:micronaut-inject-groovy"
