@@ -1,23 +1,23 @@
-# Grails Web Profile
+# Grace Web Profile
 
-A profile for creating Grails web applications, support `Tomcat`, `Jetty`, `Undertow` embedded server, support database such as `h2`, `MySQL`, `MariaDB`, `PostgreSQL`, and with more flexible and optional **Features**.
+A profile for creating Grace web applications, support `Tomcat`, `Jetty`, `Undertow` embedded server, support database such as `h2`, `MySQL`, `MariaDB`, `PostgreSQL`, and with more flexible and optional **Features**.
 
-## Grails Stack
+## Grace Stack
 
-- Grails **5.0.0**
-- Gradle **7.2**
-- Spring Framework **5.3.16**
-- Spring Boot **2.6.4**
-- Micronaut **3.4.0**
+- Grace **2022.0.0**
+- Gradle **7.6.3**
+- Spring Framework **5.3.25**
+- Spring Boot **2.7.9**
+- Micronaut **3.8.6**
 
 ## Usage
 
-Grails `web-clean` profile based on `base` profile, unlike `web` profile, except support `Tomcat`, also support `Jetty`, `Undertow` embedded server, support database such as `h2`, `MySQL`, `MariaDB`, `PostgreSQL`, with more optional dependencies and features, such as `actuator`, `scaffolding`, `async`, `events`, `cache`, `json-views`, you can add later if needed.
+Grace `web-clean` profile based on `base` profile, unlike `web` profile, except support `Tomcat`, also support `Jetty`, `Undertow` embedded server, support database such as `h2`, `MySQL`, `MariaDB`, `PostgreSQL`, with more optional dependencies and features, such as `actuator`, `scaffolding`, `async`, `events`, `cache`, `json-views`, you can add later if needed.
 
 ### Build Profile
 
 ```
-git clone https://github.com/rainboyan/web-clean.git
+git clone https://github.com/grace-profiles/web-clean.git
 cd web-clean
 ./gradlew publishToMavenLocal
 ```
@@ -27,7 +27,7 @@ cd web-clean
 #### Use Tomcat with default features
 
 ```
-grails create-app --profile org.grails.profiles:web-clean:5.0.0 org.grails.demo.web-clean-demo
+grails create-app --profile web-clean org.grails.demo.web-clean-demo
 cd web-clean-demo
 grails run-app
 ```
@@ -35,7 +35,7 @@ grails run-app
 #### Use Jetty
 
 ```
-grails create-app --profile org.grails.profiles:web-clean:5.0.0 --features actuator,console,hibernate5,i18n,interceptors,logging,rest,scaffolding,testing,validation,jetty org.grails.demo.web-clean-demo
+grails create-app --profile web-clean --features actuator,console,hibernate5,i18n,interceptors,logging,rest,scaffolding,testing,validation,jetty org.grails.demo.web-clean-demo
 cd web-clean-demo
 grails run-app
 ```
@@ -43,16 +43,16 @@ grails run-app
 #### Use Undertow
 
 ```
-grails create-app --profile org.grails.profiles:web-clean:5.0.0 --features actuator,console,hibernate5,i18n,interceptors,logging,rest,scaffolding,testing,validation,undertow org.grails.demo.web-clean-demo
+grails create-app --profile web-clean --features actuator,console,hibernate5,i18n,interceptors,logging,rest,scaffolding,testing,validation,undertow org.grails.demo.web-clean-demo
 cd web-clean-demo
 grails run-app
 ```
 
 ## What's New
 
-### 5.0.0
+### 2022.0.0
 
-* Update Grails 5.0
+* Update Grace 2022.0.0
 * More improvements and bug fixes
 * Provider embedded servlet server:
   - Tomcat
@@ -79,7 +79,6 @@ grails run-app
   - i18n
   - interceptors
   - *json-views*
-  - *less-asset-pipeline*
   - logging
   - *markup-views*
   - rest
@@ -90,6 +89,6 @@ grails run-app
 
 ## Links
 
-- [Grails](https://grails.org)
-- [Grails Github](https://github.com/grails)
-- [Grails Web Bootstrap Profile](https://github.com/rainboyan/web-bootstrap)
+- [Grace Framework](https://graceframework.org)
+- [Grace](https://github.com/graceframework)
+- [Grace Web Bootstrap Profile](https://github.com/grace-profiles/web-bootstrap)
