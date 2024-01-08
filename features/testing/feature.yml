@@ -1,6 +1,6 @@
 description: Adds support for Testing to the project
 dependencies:
     - scope: testCompile
-      coords: "org.grails:grails-test-support"
+      coords: "org.graceframework:grace-test-support"
     - scope: testCompile
       coords: "org.mockito:mockito-core"

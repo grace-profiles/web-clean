@@ -1,4 +1,4 @@
 description: Adds support for i18n to the project
 dependencies:
     - scope: compile
-      coords: "org.grails:grails-plugin-i18n"
+      coords: "org.graceframework:grace-plugin-i18n"
